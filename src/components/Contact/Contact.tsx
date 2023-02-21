@@ -7,22 +7,22 @@ export function Contact() {
   return (
     <Container id="contact">
       <header>
-        <h2>Entre em contact comigo</h2>
+        <h2>Contact me</h2>
         <p>
-          Se você viu o meu potencial ou quer conversar comigo, não exite em me
-          mandar uma mensagem.
+          If you saw my potential or want to talk to me, don't hesitate to send
+          me a message.
         </p>
       </header>
       <div className="contacts">
         <div>
           <img src={emailIcon} alt="Email" />
-          <a href="mailto:joaotuliosoares@hotmail.com">
-            joaotuliosoares@hotmail.com
+          <a href="mailto:sandhusimarsingh@gmail.com">
+            sandhusimarsingh@gmail.com
           </a>
         </div>
         <div>
           <img src={phoneIcon} alt="Email" />
-          <a href="tel:+5531981213843">(31) 98121-3843</a>
+          <a href="tel:+14372431131">(437) 243-1131</a>
         </div>
       </div>
       <Form></Form>

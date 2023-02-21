@@ -1,28 +1,26 @@
-import { Container } from './styles'
+import { Container } from "./styles";
 
-import reactIcon from '../../assets/react-icon.svg'
-import linkedinIcon from '../../assets/linkedin.png'
-import githubIcon from '../../assets/github.png'
-import instagramIcon from '../../assets/instagram.png'
-import discordIcon from '../../assets/discord.png'
+import reactIcon from "../../assets/react-icon.svg";
+import linkedinIcon from "../../assets/linkedin.png";
+import githubIcon from "../../assets/github.png";
+import instagramIcon from "../../assets/instagram.png";
 
 export function Footer() {
   return (
     <Container className="footer">
       <a href="/" className="logo">
-        <span>J</span>
-        <span>Tulio</span>
+        <span>Simar</span>
       </a>
       <div>
         <p>
-          Este site foi feito com <img src={reactIcon} alt="React" /> e muito
-          <span>❤️</span>
+          This site was made with <img src={reactIcon} alt="React" /> by Simar
+          Singh Sandhu
         </p>
       </div>
 
       <div className="social-media">
         <a
-          href="https://www.linkedin.com/in/jtsoares/"
+          href="https://www.linkedin.com/in/simar-singh-sandhu/"
           target="_blank"
           rel="noreferrer"
         >
@@ -30,7 +28,7 @@ export function Footer() {
         </a>
 
         <a
-          href="https://github.com/joaotuliojt"
+          href="https://github.com/simarsinghsandhu"
           target="_blank"
           rel="noreferrer"
         >
@@ -38,21 +36,13 @@ export function Footer() {
         </a>
 
         <a
-          href="https://www.instagram.com/tulio_joaob/"
+          href="https://www.instagram.com/simar.singh.sandhu/"
           target="_blank"
           rel="noreferrer"
         >
           <img src={instagramIcon} alt="Instagram" />
         </a>
-
-        <a
-          href="https://discord.com/users/426120432991862784"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={discordIcon} alt="Discord" />
-        </a>
       </div>
     </Container>
-  )
+  );
 }
