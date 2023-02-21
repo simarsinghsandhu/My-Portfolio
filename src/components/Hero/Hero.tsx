@@ -17,12 +17,20 @@ export function Hero() {
           <h3>Lead Software Engineer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">(React | Angular | React Native)</p>
+          <p className="small-resume">
+            I bring 3 years of experience building complex software applications
+            using React and React Native. I have a strong proficiency in
+            software design and architecture, full-stack development, and team
+            management. Throughout my career, I have demonstrated the ability to
+            lead cross-functional teams of 10 to 15 developers and collaborate
+            effectively with stakeholders to deliver high-quality software
+            products.
+          </p>
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
-            <NavHashLink smooth to="#contato" className="button">
+            <NavHashLink smooth to="#contact" className="button">
               Contact Me
             </NavHashLink>
           </BrowserRouter>

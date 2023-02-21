@@ -17,7 +17,7 @@ export function About() {
         <ScrollAnimation animateIn="fadeInLeft">
           <h2>About Me</h2>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
+        {/* <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
           <p>
             As a Lead Software Engineer, I bring 3 years of experience building
             complex software applications using React and React Native. I have a
@@ -27,7 +27,7 @@ export function About() {
             developers and collaborate effectively with stakeholders to deliver
             high-quality software products.
           </p>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         <ScrollAnimation
           animateIn="fadeInLeft"
           delay={0.4 * 1000}
