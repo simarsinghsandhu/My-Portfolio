@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { NavHashLink, HashLink } from "react-router-hash-link";
 import { useState } from "react";
 
-import Curriculo from "../../assets/CV_JoaoTulio.pdf";
+import Curriculo from "../../assets/Simar-Resume.pdf";
 export function Header() {
   const [isActive, setActive] = useState(false);
 
@@ -20,8 +20,8 @@ export function Header() {
     <Container className="header-fixed">
       <Router>
         <HashLink smooth to="#home" className="logo">
-          <span>J</span>
-          <span>Tulio</span>
+          {/* <span>*</span> */}
+          <span>Simar</span>
         </HashLink>
 
         <input
@@ -44,10 +44,10 @@ export function Header() {
             Portfolio
           </NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
-            contact
+            Contact
           </NavHashLink>
           <a href={Curriculo} download className="button">
-            CV
+            Resume
           </a>
         </nav>
 
