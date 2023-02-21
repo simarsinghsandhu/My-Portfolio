@@ -24,7 +24,7 @@ export function Main() {
         id="tsparticles"
         options={{
           fullScreen: {
-            enable: true,
+            enable: false,
             zIndex: 1,
           },
           detectRetina: true,
@@ -109,7 +109,7 @@ export function Main() {
               enable: true,
               outMode: "out",
               random: false,
-              speed: 2,
+              speed: 1,
               straight: false,
             },
             number: {
@@ -117,8 +117,8 @@ export function Main() {
                 enable: true,
                 area: 800,
               },
-              limit: 20,
-              value: 15,
+              limit: 15,
+              value: 10,
             },
             opacity: {
               animation: {
