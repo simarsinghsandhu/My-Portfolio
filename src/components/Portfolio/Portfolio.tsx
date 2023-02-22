@@ -9,7 +9,7 @@ export function Portfolio() {
       <h2>My Portfolio</h2>
 
       <div className="projects">
-        <ScrollAnimation animateIn="flipInX">
+        <ScrollAnimation animateOnce animateIn="flipInX">
           <div className="project">
             <header>
               <svg
@@ -56,7 +56,7 @@ export function Portfolio() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="flipInX">
+        <ScrollAnimation animateOnce animateIn="flipInX">
           <div className="project">
             <header>
               <svg
@@ -108,7 +108,7 @@ export function Portfolio() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="flipInX">
+        <ScrollAnimation animateOnce animateIn="flipInX">
           <div className="project">
             <header>
               <svg
@@ -152,7 +152,7 @@ export function Portfolio() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="flipInX">
+        <ScrollAnimation animateOnce animateIn="flipInX">
           <div className="project">
             <header>
               <svg
@@ -192,7 +192,7 @@ export function Portfolio() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="flipInX">
+        <ScrollAnimation animateOnce animateIn="flipInX">
           <div className="project">
             <header>
               <svg
@@ -235,7 +235,7 @@ export function Portfolio() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="flipInX">
+        <ScrollAnimation animateOnce animateIn="flipInX">
           <div className="project">
             <header>
               <svg
