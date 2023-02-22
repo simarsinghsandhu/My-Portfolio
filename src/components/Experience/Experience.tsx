@@ -8,28 +8,46 @@ import StepLabel from "@mui/material/StepLabel";
 import StepContent from "@mui/material/StepContent";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
-import { Grid } from "@mui/material";
-import { width } from "@mui/system";
+import { Avatar, Grid } from "@mui/material";
+import VNLogo from "../../assets/VN.png";
+import AdvantaLogo from "../../assets/Advanta.png";
 
 const steps = [
   {
-    label: "Select campaign settings",
-    description: `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`,
+    id: 1,
+    title: "Front-End Developer",
+    subtitle: `Advanta Innovations, Advanta Rapid ERP,  Remote - Toronto`,
+    time: "Jun 2020 – Oct 2021",
+    image: AdvantaLogo,
+    bullets: [
+      "Built a web application for high educational student information systems using HTML5, CSS3, JavaScript, Nodes Js, Angular and Bootstrap.",
+      "Implemented RESTful APIs for backend integration, and participated in the agile development process, utilizing JIRA and Confluence for project management.",
+    ],
   },
   {
-    label: "Create an ad group",
-    description:
-      "An ad group contains one or more ads which target a shared set of keywords.",
+    id: 2,
+    title: "Software Engineer",
+    subtitle: `Viral Nation Inc, 2355 Skymark Ave #200, Mississauga, Toronto`,
+    time: "Oct 2021 – Jan 2023",
+    image: VNLogo,
+    bullets: [
+      "Developed and maintained a React web application from scratch to launch, using  React, JavaScript, TypeScript, Material UI, Graphql and Redux.",
+      "Conducted code reviews and provided technical guidance to junior developers.",
+      "Implemented RESTful APIs for backend integration, and participated in the agile development process, utilizing JIRA and Confluence for project management.",
+    ],
   },
   {
-    label: "Create an ad",
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
+    id: 3,
+    title: "Lead Software Engineer",
+    subtitle: `Viral Nation Inc, 2355 Skymark Ave #200, Mississauga, Toronto`,
+    time: "Jan 2023 – Present",
+    image: VNLogo,
+    bullets: [
+      "Led the development of multiple front-end products, from conception to launch, using JavaScript, TypeScript, GraphQl, React and React Native.",
+      "Managed a team of 10 to 15 front-end developers, providing mentorship, code reviews, technical guidance, and conducting technical interviews.",
+      "Collaborated with product managers, designers, and other stakeholders to define product roadmap and deliver features on time.",
+      "Constant communication with frontend, backend, data scientists, microservices, customer success, and tech managers to ensure perfect architectural structure.",
+    ],
   },
 ];
 
@@ -52,13 +70,32 @@ export default function VerticalLinearStepper() {
     <Grid item xs={12}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
-          <Step key={step.label}>
-            <StepLabel StepIconComponent={}>
-              <h3>{step.label}</h3>
-              <h2>{step.label}</h2>
+          <Step key={step.id}>
+            <StepLabel
+              StepIconComponent={() => (
+                <Avatar
+                  variant="rounded"
+                  sx={{ width: "50px", height: "50px" }}
+                  src={step?.image}
+                />
+              )}
+            >
+              <Grid container justifyContent="space-between">
+                <Grid item>
+                  <h3>{step.title}</h3>
+                </Grid>
+                <Grid item>
+                  <div className="text">{step.time}</div>
+                </Grid>
+              </Grid>
+              <div className="text">{step.subtitle}</div>
             </StepLabel>
             <StepContent>
-              <p>{step.description}</p>
+              {step?.bullets?.map((bullet: any) => (
+                <div className="text" style={{ opacity: 0.7 }}>
+                  {bullet}
+                </div>
+              ))}
               <Box sx={{ mb: 2 }}>
                 <div>
                   <Button
@@ -106,10 +143,12 @@ export default function VerticalLinearStepper() {
 export function Experience() {
   return (
     <Container id="experience">
-      <h2>Experience</h2>
+      <h1>Experience</h1>
       <ScrollAnimation animateOnce animateIn="fadeInUp">
-        <Grid container>
-          <VerticalLinearStepper />
+        <Grid container justifyContent="center">
+          <Grid xs={12} lg={8}>
+            <VerticalLinearStepper />
+          </Grid>
         </Grid>
       </ScrollAnimation>
     </Container>

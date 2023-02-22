@@ -22,6 +22,10 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--black);
       }
 
+      .text {
+        color: var(--black);
+      }
+
       .logo{
         color: var(--black);
       }
