@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
-
 export const GlobalStyle = createGlobalStyle`
 
   :root{
@@ -16,6 +14,11 @@ export const GlobalStyle = createGlobalStyle`
       body{
         transition: 0.5s;
         background-color: #f5f5f5;
+        color: var(--black);
+      }
+
+      .project{
+        background-color: #e2e2e2;
         color: var(--black);
       }
 
@@ -122,4 +125,4 @@ export const GlobalStyle = createGlobalStyle`
   }
   
 
-`
+`;
