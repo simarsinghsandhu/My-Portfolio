@@ -1,4 +1,4 @@
-# Portfólio João Túlio
+# Portfólio Simar Singh Sandhu
 
 Este projeto foi criado com CRA (Create React App).
 
