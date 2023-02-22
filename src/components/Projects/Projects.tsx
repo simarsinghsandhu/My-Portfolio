@@ -8,7 +8,7 @@ export function Projects() {
     {
       title: "Cost Calculator",
       description:
-        "I created a simple Angular App to measure the cost of Influencer Compaign by the no. of influencers, tier level and the activation type.",
+        "I created a simple calcualtor to measure the cost of Influencer Compaign by the no. of influencers, tier level and the activation type.",
       link: "https://costcalculators.firebaseapp.com/",
       github: null,
       skills: ["Angular", "JavaScript", "BootStrap"],
@@ -24,7 +24,7 @@ export function Projects() {
   ];
   return (
     <Container id="projects">
-      <h2>My Projects</h2>
+      <h2>Projects</h2>
 
       <div className="projects">
         {projects.map((item) => (

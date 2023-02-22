@@ -16,6 +16,7 @@ import sassIcon from "../../assets/sass-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vscodeIcon from "../../assets/vscode-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
+import { Experience } from "../Experience/Experience";
 
 export function Main() {
   return (
@@ -247,6 +248,7 @@ export function Main() {
       />
       <Hero></Hero>
       <About></About>
+      <Experience></Experience>
       <Projects></Projects>
       <Contact></Contact>
     </Container>
