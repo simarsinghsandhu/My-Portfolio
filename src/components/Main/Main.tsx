@@ -3,7 +3,7 @@ import { Container } from "./styles";
 import { Hero } from "../Hero/Hero";
 import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
-import { Portfolio } from "../Portfolio/Portfolio";
+import { Projects } from "../Projects/Projects";
 
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import cssIcon from "../../assets/css-icon.svg";
@@ -247,7 +247,7 @@ export function Main() {
       />
       <Hero></Hero>
       <About></About>
-      <Portfolio></Portfolio>
+      <Projects></Projects>
       <Contact></Contact>
     </Container>
   );

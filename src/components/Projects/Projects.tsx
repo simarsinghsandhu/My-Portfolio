@@ -3,7 +3,7 @@ import githubIcon from "../../assets/github-icon.svg";
 import externalLinkIcon from "../../assets/external-link-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
-export function Portfolio() {
+export function Projects() {
   const projects = [
     {
       title: "Cost Calculator",
@@ -16,15 +16,15 @@ export function Portfolio() {
     {
       title: "VN Secure",
       description:
-        "I created social media monitoring and screening platform with React from Scratch to launch, working at Viral Nation. Success to this product gave me more confidence.",
+        "I created social media monitoring and screening platform from Scratch to launch, working at Viral Nation. Success to this product gave me more confidence.",
       link: "https://www.viralnation.com/vn-secure/",
       github: null,
       skills: ["React", "TypeScript", "MUI", "Styled Components"],
     },
   ];
   return (
-    <Container id="portfolio">
-      <h2>My Portfolio</h2>
+    <Container id="projects">
+      <h2>My Projects</h2>
 
       <div className="projects">
         {projects.map((item) => (
