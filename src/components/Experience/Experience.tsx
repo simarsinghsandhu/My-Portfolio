@@ -11,6 +11,7 @@ import Paper from "@mui/material/Paper";
 import { Avatar, Grid } from "@mui/material";
 import VNLogo from "../../assets/VN.png";
 import AdvantaLogo from "../../assets/Advanta.png";
+import FiberSmartRecordIcon from "@mui/icons-material/FiberSmartRecord";
 
 const steps = [
   {
@@ -93,7 +94,14 @@ export default function VerticalLinearStepper() {
             <StepContent>
               {step?.bullets?.map((bullet: any) => (
                 <div className="text" style={{ opacity: 0.7 }}>
-                  {bullet}
+                  <Grid container alignItems="center" spacing={1}>
+                    <Grid item>
+                      <FiberSmartRecordIcon color="secondary" />
+                    </Grid>
+                    <Grid item xs>
+                      {bullet}
+                    </Grid>
+                  </Grid>
                 </div>
               ))}
               <Box sx={{ mb: 2 }}>
@@ -104,7 +112,7 @@ export default function VerticalLinearStepper() {
                     sx={{ mt: 1, mr: 1 }}
                     size="large"
                   >
-                    {index === steps.length - 1 ? "Finish" : "Continue"}
+                    {index === steps.length - 1 ? "Finish" : "Next"}
                   </Button>
                   <Button
                     disabled={index === 0}
@@ -132,7 +140,7 @@ export default function VerticalLinearStepper() {
             engineering.
           </p>
           <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }} size="large">
-            Re-View Experience
+            Reset
           </Button>
         </Paper>
       )}
