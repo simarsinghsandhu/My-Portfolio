@@ -65,10 +65,6 @@ export default function VerticalLinearStepper() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
   return (
     <Grid item xs={12}>
       <Stepper activeStep={activeStep} orientation="vertical">
@@ -82,6 +78,8 @@ export default function VerticalLinearStepper() {
                   src={step?.image}
                 />
               )}
+              style={{ cursor: "pointer" }}
+              onClick={() => setActiveStep(index)}
             >
               <Grid container justifyContent="space-between">
                 <Grid item>
@@ -144,14 +142,6 @@ export default function VerticalLinearStepper() {
             well-suited for the constantly-evolving field of software
             engineering.
           </p>
-          <Button
-            onClick={handleReset}
-            sx={{ mt: 1 }}
-            size="large"
-            variant="text"
-          >
-            Reset
-          </Button>
         </div>
       )}
     </Grid>
