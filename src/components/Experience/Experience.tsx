@@ -19,6 +19,7 @@ const steps = [
     title: "Front-End Developer",
     subtitle: `Advanta Innovations, Advanta Rapid ERP,  Remote - Toronto`,
     time: "Jun 2020 – Oct 2021",
+    is_present: false,
     image: AdvantaLogo,
     bullets: [
       "Built a web application for high educational student information systems using HTML5, CSS3, JavaScript, Nodes Js, Angular and Bootstrap.",
@@ -30,6 +31,7 @@ const steps = [
     title: "Software Engineer",
     subtitle: `Viral Nation Inc, 2355 Skymark Ave #200, Mississauga, Toronto`,
     time: "Oct 2021 – Jan 2023",
+    is_present: false,
     image: VNLogo,
     bullets: [
       "Developed and maintained a React web application from scratch to launch, using  React, JavaScript, TypeScript, Material UI, Graphql and Redux.",
@@ -41,7 +43,8 @@ const steps = [
     id: 3,
     title: "Lead Software Engineer",
     subtitle: `Viral Nation Inc, 2355 Skymark Ave #200, Mississauga, Toronto`,
-    time: "Jan 2023 – Present",
+    time: "Jan 2023 – ",
+    is_present: true,
     image: VNLogo,
     bullets: [
       "Led the development of multiple front-end products, from conception to launch, using JavaScript, TypeScript, GraphQl, React and React Native.",
@@ -86,14 +89,17 @@ export default function VerticalLinearStepper() {
                   <h3>{step.title}</h3>
                 </Grid>
                 <Grid item>
-                  <div className="text">{step.time}</div>
+                  <div className="text">
+                    {step.time}
+                    {step?.is_present && <span>Present</span>}
+                  </div>
                 </Grid>
               </Grid>
               <div className="text">{step.subtitle}</div>
             </StepLabel>
             <StepContent>
               {step?.bullets?.map((bullet: any) => (
-                <div className="text" style={{ opacity: 0.7 }}>
+                <div className="text" style={{ opacity: 0.7, margin: "8px" }}>
                   <Grid container alignItems="center" spacing={1}>
                     <Grid item>
                       <FiberSmartRecordIcon color="secondary" />
@@ -129,7 +135,7 @@ export default function VerticalLinearStepper() {
         ))}
       </Stepper>
       {activeStep === steps.length && (
-        <Paper square elevation={0} sx={{ p: 3 }}>
+        <div className="project">
           <p>
             Based on my experience and skillset, I am confident in my ability to
             excel as a senior software engineer. Through my experience, i have a
@@ -139,10 +145,15 @@ export default function VerticalLinearStepper() {
             well-suited for the constantly-evolving field of software
             engineering.
           </p>
-          <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }} size="large">
+          <Button
+            onClick={handleReset}
+            sx={{ mt: 1 }}
+            size="large"
+            variant="text"
+          >
             Reset
           </Button>
-        </Paper>
+        </div>
       )}
     </Grid>
   );
