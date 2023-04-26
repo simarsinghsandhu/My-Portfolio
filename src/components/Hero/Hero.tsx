@@ -10,13 +10,13 @@ export function Hero() {
         <ScrollAnimation animateOnce animateIn="fadeInUp">
           <p>Hi 👋, I am</p>
         </ScrollAnimation>
-        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.2 * 1000}>
+        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.2 * 500}>
           <h1>Simar Singh Sandhu</h1>
         </ScrollAnimation>
-        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.4 * 1000}>
+        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.4 * 500}>
           <h3>Lead Software Engineer</h3>
         </ScrollAnimation>
-        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.6 * 1000}>
+        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.6 * 500}>
           <p className="small-resume">
             I bring 3 years of experience building complex software applications
             using React and React Native. I have a strong proficiency in
@@ -28,7 +28,7 @@ export function Hero() {
           </p>
         </ScrollAnimation>
 
-        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.8 * 1000}>
+        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.8 * 500}>
           <BrowserRouter>
             <NavHashLink smooth to="#contact" className="button">
               Contact Me
@@ -37,7 +37,7 @@ export function Hero() {
         </ScrollAnimation>
       </div>
       <div className="hero-image">
-        <ScrollAnimation animateOnce animateIn="fadeInRight" delay={1 * 1000}>
+        <ScrollAnimation animateOnce animateIn="fadeInRight" delay={1 * 500}>
           <img src={Illustration} alt="Ilustração" />
         </ScrollAnimation>
       </div>
