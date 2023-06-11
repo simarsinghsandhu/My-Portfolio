@@ -6,23 +6,6 @@ export const Container = styled.section`
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 
-  .hard-skills {
-    margin-top: 1.6rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.8rem;
-  }
-  .hability {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      width: 3.4rem;
-    }
-  }
-
   h2 {
     display: inline-block;
     margin-bottom: 2rem;
@@ -41,9 +24,10 @@ export const Container = styled.section`
   }
 
   .about-image {
+    margin-top: 4rem;
     text-align: center;
     img {
-      margin-top: 10rem;
+      margin-top: 1rem;
       width: 50%;
       filter: grayscale(0);
       transition: filter 0.5s;
@@ -64,9 +48,6 @@ export const Container = styled.section`
     display: block;
     text-align: center;
 
-    .about-image {
-      display: flex;
-    }
     .hard-skills {
       justify-content: center;
     }

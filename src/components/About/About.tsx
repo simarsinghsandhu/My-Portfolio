@@ -8,7 +8,8 @@ import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
-import profileImage from "../../assets/profile.jpg";
+import profileImage from "../../assets/profile.png";
+import { Grid } from "@mui/material";
 
 export function About() {
   return (
@@ -63,60 +64,13 @@ export function About() {
             surpass business goals.
           </p>
         </ScrollAnimation>
-
-        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.7 * 500}>
-          <h3>Here are my main skills:</h3>
-        </ScrollAnimation>
-        <div className="hard-skills">
-          <div className="hability">
-            <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.1 * 500}>
-              <img src={reactIcon} alt="React" />
-            </ScrollAnimation>
-          </div>
-
-          <div className="hability">
-            <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.2 * 500}>
-              <img src={vueIcon} alt="Vue" />
-            </ScrollAnimation>
-          </div>
-
-          <div className="hability">
-            <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.3 * 500}>
-              <img src={jsIcon} alt="JavaScript" />
-            </ScrollAnimation>
-          </div>
-
-          <div className="hability">
-            <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.4 * 500}>
-              <img src={htmlIcon} alt="Html" />
-            </ScrollAnimation>
-          </div>
-
-          <div className="hability">
-            <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.5 * 500}>
-              <img src={cssIcon} alt="Css" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.6 * 500}>
-              <img src={nodeIcon} alt="Node" />
-            </ScrollAnimation>
-          </div>
-
-          <div className="hability">
-            <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.7 * 500}>
-              <img src={typescriptIcon} alt="Typescript" />
-            </ScrollAnimation>
-          </div>
-        </div>
       </div>
       <div className="about-image">
         <ScrollAnimation animateOnce animateIn="fadeInRight" delay={0.6 * 500}>
           <img
             style={{
               maxWidth: "100%",
-              height: "400px",
-              width: "400px",
+              width: "300px",
               objectFit: "cover",
               objectPosition: "center",
             }}
@@ -124,6 +78,109 @@ export function About() {
             alt="Simar"
           />
         </ScrollAnimation>
+        <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.7 * 500}>
+          <h3>Here are my main skills:</h3>
+        </ScrollAnimation>
+        <Grid item xs={12}>
+          <Grid container justifyContent="center" spacing={2}>
+            <Grid item>
+              <ScrollAnimation
+                animateOnce
+                animateIn="fadeInUp"
+                delay={0.1 * 500}
+              >
+                <img
+                  src={reactIcon}
+                  alt="React"
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </ScrollAnimation>
+            </Grid>
+
+            <Grid item>
+              <ScrollAnimation
+                animateOnce
+                animateIn="fadeInUp"
+                delay={0.2 * 500}
+              >
+                <img
+                  src={vueIcon}
+                  alt="Vue"
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </ScrollAnimation>
+            </Grid>
+
+            <Grid item>
+              <ScrollAnimation
+                animateOnce
+                animateIn="fadeInUp"
+                delay={0.3 * 500}
+              >
+                <img
+                  src={jsIcon}
+                  alt="JavaScript"
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </ScrollAnimation>
+            </Grid>
+
+            <Grid item>
+              <ScrollAnimation
+                animateOnce
+                animateIn="fadeInUp"
+                delay={0.4 * 500}
+              >
+                <img
+                  src={htmlIcon}
+                  alt="Html"
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </ScrollAnimation>
+            </Grid>
+
+            <Grid item>
+              <ScrollAnimation
+                animateOnce
+                animateIn="fadeInUp"
+                delay={0.5 * 500}
+              >
+                <img
+                  src={cssIcon}
+                  alt="Css"
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </ScrollAnimation>
+            </Grid>
+            <Grid item>
+              <ScrollAnimation
+                animateOnce
+                animateIn="fadeInUp"
+                delay={0.6 * 500}
+              >
+                <img
+                  src={nodeIcon}
+                  alt="Node"
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </ScrollAnimation>
+            </Grid>
+
+            <Grid item>
+              <ScrollAnimation
+                animateOnce
+                animateIn="fadeInUp"
+                delay={0.7 * 500}
+              >
+                <img
+                  src={typescriptIcon}
+                  alt="Typescript"
+                  style={{ width: "50px", height: "50px" }}
+                />
+              </ScrollAnimation>
+            </Grid>
+          </Grid>
+        </Grid>
       </div>
     </Container>
   );
