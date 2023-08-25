@@ -28,7 +28,7 @@ const steps = [
   {
     id: 2,
     title: "Software Engineer",
-    subtitle: `Viral Nation Inc, 2355 Skymark Ave #200, Mississauga, Toronto`,
+    subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
     time: "Oct 2021 – Jan 2023",
     is_present: false,
     image: VNLogo,
@@ -41,7 +41,7 @@ const steps = [
   {
     id: 3,
     title: "Lead Software Engineer",
-    subtitle: `Viral Nation Inc, 2355 Skymark Ave #200, Mississauga, Toronto`,
+    subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
     time: "Jan 2023 – ",
     is_present: true,
     image: VNLogo,
@@ -55,7 +55,7 @@ const steps = [
 ];
 
 export default function VerticalLinearStepper() {
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = React.useState(2);
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
