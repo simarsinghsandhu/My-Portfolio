@@ -18,13 +18,13 @@ export function Hero() {
         </ScrollAnimation>
         <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.6 * 500}>
           <p className="small-resume">
-            I bring 3 years of experience building complex software applications
-            using React and React Native. I have a strong proficiency in
-            software design and architecture, full-stack development, and team
-            management. Throughout my career, I have demonstrated the ability to
-            lead cross-functional teams of 10 to 15 developers and collaborate
-            effectively with stakeholders to deliver high-quality software
-            products.
+            I bring more than 2 years of experience building complex software
+            applications using React and React Native. I have a strong
+            proficiency in software design and architecture, full-stack
+            development, and team management. Throughout my career, I have
+            demonstrated the ability to lead cross-functional teams of 10 to 15
+            developers and collaborate effectively with stakeholders to deliver
+            high-quality software products.
           </p>
         </ScrollAnimation>
 
