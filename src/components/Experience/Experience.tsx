@@ -14,15 +14,31 @@ import FiberSmartRecordIcon from "@mui/icons-material/FiberSmartRecord";
 
 const steps = [
   {
-    id: 1,
-    title: "Front-End Developer",
-    subtitle: `Advanta Innovations, Advanta Rapid ERP,  Remote - Toronto`,
-    time: "Jun 2020 – Oct 2021",
+    id: 4,
+    title: "Senior Software Engineer",
+    subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
+    time: "Aug 2024 – Feb 2025",
     is_present: false,
-    image: AdvantaLogo,
+    image: VNLogo,
     bullets: [
-      "Built a web application for high educational student information systems using HTML5, CSS3, JavaScript, Nodes Js, Angular and Bootstrap.",
-      "Implemented RESTful APIs for backend integration, and participated in the agile development process, utilizing JIRA and Confluence for project management.",
+      "Led the transition to Svelte 5, optimizing web applications for enhanced performance, reduced load times, and seamless user experiences.",
+      "Collaborated with cross-functional teams (front-end, back-end, data scientists, product managers) to define and implement software solutions.",
+      "Designed scalable architectures and upheld code quality through mentoring and reviews.",
+      "Spearheaded agile development cycles to deliver high-quality features within deadlines."
+    ],
+  },
+  {
+    id: 3,
+    title: "Lead Software Engineer",
+    subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
+    time: "Jan 2023 – Aug 2024",
+    is_present: false,
+    image: VNLogo,
+    bullets: [
+      "Led the development of multiple front-end products, from conception to launch, using JavaScript, TypeScript, GraphQl, React and React Native.",
+      "Managed a team of 10 to 15 front-end developers, providing mentorship, code reviews, technical guidance, and conducting technical interviews.",
+      "Collaborated with product managers, designers, and other stakeholders to define product roadmap and deliver features on time.",
+      "Constant communication with frontend, backend, data scientists, microservices, customer success, and tech managers to ensure perfect architectural structure.",
     ],
   },
   {
@@ -39,36 +55,21 @@ const steps = [
     ],
   },
   {
-    id: 3,
-    title: "Lead Software Engineer",
-    subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
-    time: "Jan 2023 – Aug 2024",
+    id: 1,
+    title: "Front-End Developer",
+    subtitle: `Advanta Innovations, Advanta Rapid ERP,  Remote - Toronto`,
+    time: "Jun 2020 – Oct 2021",
     is_present: false,
-    image: VNLogo,
+    image: AdvantaLogo,
     bullets: [
-      "Led the development of multiple front-end products, from conception to launch, using JavaScript, TypeScript, GraphQl, React and React Native.",
-      "Managed a team of 10 to 15 front-end developers, providing mentorship, code reviews, technical guidance, and conducting technical interviews.",
-      "Collaborated with product managers, designers, and other stakeholders to define product roadmap and deliver features on time.",
-      "Constant communication with frontend, backend, data scientists, microservices, customer success, and tech managers to ensure perfect architectural structure.",
-    ],
-  }, {
-    id: 4,
-    title: "Senior Software Engineer",
-    subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
-    time: "Aug 2024 – Feb 2025",
-    is_present: false,
-    image: VNLogo,
-    bullets: [
-      "Led the transition to Svelte 5, optimizing web applications for enhanced performance, reduced load times, and seamless user experiences.",
-      "Collaborated with cross-functional teams (front-end, back-end, data scientists, product managers) to define and implement software solutions.",
-      "Designed scalable architectures and upheld code quality through mentoring and reviews.",
-      "Spearheaded agile development cycles to deliver high-quality features within deadlines."
+      "Built a web application for high educational student information systems using HTML5, CSS3, JavaScript, Nodes Js, Angular and Bootstrap.",
+      "Implemented RESTful APIs for backend integration, and participated in the agile development process, utilizing JIRA and Confluence for project management.",
     ],
   },
 ];
 
 export default function VerticalLinearStepper() {
-  const [activeStep, setActiveStep] = React.useState(2);
+  const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
