@@ -42,14 +42,27 @@ const steps = [
     id: 3,
     title: "Lead Software Engineer",
     subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
-    time: "Jan 2023 – ",
-    is_present: true,
+    time: "Jan 2023 – Aug 2024",
+    is_present: false,
     image: VNLogo,
     bullets: [
       "Led the development of multiple front-end products, from conception to launch, using JavaScript, TypeScript, GraphQl, React and React Native.",
       "Managed a team of 10 to 15 front-end developers, providing mentorship, code reviews, technical guidance, and conducting technical interviews.",
       "Collaborated with product managers, designers, and other stakeholders to define product roadmap and deliver features on time.",
       "Constant communication with frontend, backend, data scientists, microservices, customer success, and tech managers to ensure perfect architectural structure.",
+    ],
+  }, {
+    id: 4,
+    title: "Senior Software Engineer",
+    subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
+    time: "Aug 2024 – Feb 2025",
+    is_present: false,
+    image: VNLogo,
+    bullets: [
+      "Led the transition to Svelte 5, optimizing web applications for enhanced performance, reduced load times, and seamless user experiences.",
+      "Collaborated with cross-functional teams (front-end, back-end, data scientists, product managers) to define and implement software solutions.",
+      "Designed scalable architectures and upheld code quality through mentoring and reviews.",
+      "Spearheaded agile development cycles to deliver high-quality features within deadlines."
     ],
   },
 ];

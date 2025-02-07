@@ -14,17 +14,11 @@ export function Hero() {
           <h1>Simar Singh Sandhu</h1>
         </ScrollAnimation>
         <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.4 * 500}>
-          <h3>Lead Software Engineer</h3>
+          <h3>Full-Stack | Lead Software Engineer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateOnce animateIn="fadeInUp" delay={0.6 * 500}>
           <p className="small-resume">
-            I bring more than 3 years of experience building complex software
-            applications using React and React Native. I have a strong
-            proficiency in software design and architecture, full-stack
-            development, and team management. Throughout my career, I have
-            demonstrated the ability to lead cross-functional teams of 10 to 15
-            developers and collaborate effectively with stakeholders to deliver
-            high-quality software products.
+            With 4 years of experience as a full-stack software engineer, I specialize in front-end architecture, team leadership, and mentoring. I have a strong proficiency in software design and architecture, full-stack development, and team management. Throughout my career, I have led cross-functional teams of 10 to 15 developers and collaborated effectively with stakeholders to deliver scalable, high-performance software solutions. I leverage emerging technologies in web development to drive innovation and build complex applications using React and React Native.
           </p>
         </ScrollAnimation>
 
