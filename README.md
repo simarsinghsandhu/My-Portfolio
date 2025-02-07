@@ -16,7 +16,8 @@ The website includes the following features:
 - Resume download button on top right.
 - Light/Dark theme behaviours.
 
-## About me: A section where Simar can introduce himself and talk about his background and experience.
+## About me: 
+A section where Simar can introduce himself and talk about his background and experience.
 - **Skills:** A section where Simar can list his technical skills.
 - **Portfolio:** A section where Simar can showcase his projects.
 - **Contact:** A section where visitors can contact Simar.
