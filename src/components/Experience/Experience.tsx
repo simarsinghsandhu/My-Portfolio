@@ -1,16 +1,16 @@
-import { Container } from "./styles";
-import ScrollAnimation from "react-animate-on-scroll";
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Stepper from "@mui/material/Stepper";
-import Step from "@mui/material/Step";
-import StepLabel from "@mui/material/StepLabel";
-import StepContent from "@mui/material/StepContent";
-import Button from "@mui/material/Button";
-import { Avatar, Grid } from "@mui/material";
-import VNLogo from "../../assets/VN.png";
-import AdvantaLogo from "../../assets/Advanta.png";
-import FiberSmartRecordIcon from "@mui/icons-material/FiberSmartRecord";
+import { Container } from "./styles"
+import ScrollAnimation from "react-animate-on-scroll"
+import * as React from "react"
+import Box from "@mui/material/Box"
+import Stepper from "@mui/material/Stepper"
+import Step from "@mui/material/Step"
+import StepLabel from "@mui/material/StepLabel"
+import StepContent from "@mui/material/StepContent"
+import Button from "@mui/material/Button"
+import { Avatar, Grid } from "@mui/material"
+import VNLogo from "../../assets/VN.png"
+import AdvantaLogo from "../../assets/Advanta.png"
+import FiberSmartRecordIcon from "@mui/icons-material/FiberSmartRecord"
 
 const steps = [
   {
@@ -21,10 +21,10 @@ const steps = [
     is_present: false,
     image: VNLogo,
     bullets: [
-      "Led the transition to Svelte 5, optimizing web applications for enhanced performance, reduced load times, and seamless user experiences.",
-      "Collaborated with cross-functional teams (front-end, back-end, data scientists, product managers) to define and implement software solutions.",
-      "Designed scalable architectures and upheld code quality through mentoring and reviews.",
-      "Spearheaded agile development cycles to deliver high-quality features within deadlines."
+      "Conducted performance optimization by implementing progressive web app techniques, significantly reducing load times and enhancing user engagement.",
+      "Implemented best practices and guidelines through code reviews and unit testing (Jest).",
+      "Introduced reusable UI component library, reducing front-end bugs by 35%.",
+      "Maintained documentation for onboarding, code conventions, and CI/CD pipeline usage.",
     ],
   },
   {
@@ -35,10 +35,10 @@ const steps = [
     is_present: false,
     image: VNLogo,
     bullets: [
-      "Led the development of multiple front-end products, from conception to launch, using JavaScript, TypeScript, GraphQl, React and React Native.",
-      "Managed a team of 10 to 15 front-end developers, providing mentorship, code reviews, technical guidance, and conducting technical interviews.",
-      "Collaborated with product managers, designers, and other stakeholders to define product roadmap and deliver features on time.",
-      "Constant communication with frontend, backend, data scientists, microservices, customer success, and tech managers to ensure perfect architectural structure.",
+      "Led development across multiple micro-frontend apps, using GraphQL and TypeScript.",
+      "Spearheaded migration from legacy Angular codebase to React, reducing technical debt by 60%.",
+      "Oversaw 30+ technical interviews, code reviews, and team mentorship to enhance code quality.",
+      "Delivered features on time using agile sprint planning and constant communication with PMs.",
     ],
   },
   {
@@ -49,9 +49,10 @@ const steps = [
     is_present: false,
     image: VNLogo,
     bullets: [
-      "Developed and maintained a React web application from scratch to launch, using  React, JavaScript, TypeScript, Material UI, Graphql and Redux.",
-      "Conducted code reviews and provided technical guidance to junior developers.",
-      "Implemented RESTful APIs for backend integration, and participated in the agile development process, utilizing JIRA and Confluence for project management.",
+      "Developed single page web applications using React, Redux, & REST APIs.",
+      "Implemented mobile-first design principles for responsive layouts.",
+      "Utilized Chrome DevTools for debugging and performance analysis.",
+      "Collaborated closely with UI/UX designers and QA to improve design-to-code accuracy.",
     ],
   },
   {
@@ -62,32 +63,32 @@ const steps = [
     is_present: false,
     image: AdvantaLogo,
     bullets: [
-      "Built a web application for high educational student information systems using HTML5, CSS3, JavaScript, Nodes Js, Angular and Bootstrap.",
-      "Implemented RESTful APIs for backend integration, and participated in the agile development process, utilizing JIRA and Confluence for project management.",
+      "Maintained legacy web application code using HTML5, CSS3, JavaScript, Nodes Js, Angular and Bootstrap.",
+      "Implemented RESTful APIs and new features, by participating in the agile development process, utilizing JIRA and Confluence for project management.",
     ],
   },
-];
+]
 
 export default function VerticalLinearStepper() {
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = React.useState(0)
 
   const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
+    setActiveStep((prevActiveStep) => prevActiveStep + 1)
+  }
 
   const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
+    setActiveStep((prevActiveStep) => prevActiveStep - 1)
+  }
 
   return (
     <Grid item xs={12}>
-      <Stepper activeStep={activeStep} orientation="vertical">
+      <Stepper activeStep={activeStep} orientation='vertical'>
         {steps.map((step, index) => (
           <Step key={step.id}>
             <StepLabel
               StepIconComponent={() => (
                 <Avatar
-                  variant="rounded"
+                  variant='rounded'
                   sx={{ width: "50px", height: "50px" }}
                   src={step?.image}
                 />
@@ -95,25 +96,25 @@ export default function VerticalLinearStepper() {
               style={{ cursor: "pointer" }}
               onClick={() => setActiveStep(index)}
             >
-              <Grid container justifyContent="space-between">
+              <Grid container justifyContent='space-between'>
                 <Grid item>
                   <h3>{step.title}</h3>
                 </Grid>
                 <Grid item>
-                  <div className="text">
+                  <div className='text'>
                     {step.time}
                     {step?.is_present && <span>Present</span>}
                   </div>
                 </Grid>
               </Grid>
-              <div className="text">{step.subtitle}</div>
+              <div className='text'>{step.subtitle}</div>
             </StepLabel>
             <StepContent>
               {step?.bullets?.map((bullet: any) => (
-                <div className="text" style={{ opacity: 0.7, margin: "8px" }}>
-                  <Grid container alignItems="center" spacing={1}>
+                <div className='text' style={{ opacity: 0.7, margin: "8px" }}>
+                  <Grid container alignItems='center' spacing={1}>
                     <Grid item>
-                      <FiberSmartRecordIcon color="secondary" />
+                      <FiberSmartRecordIcon color='secondary' />
                     </Grid>
                     <Grid item xs>
                       {bullet}
@@ -124,10 +125,10 @@ export default function VerticalLinearStepper() {
               <Box sx={{ mb: 2 }}>
                 <div>
                   <Button
-                    variant="contained"
+                    variant='contained'
                     onClick={handleNext}
                     sx={{ mt: 1, mr: 1 }}
-                    size="large"
+                    size='large'
                   >
                     {index === steps.length - 1 ? "Finish" : "Next"}
                   </Button>
@@ -135,7 +136,7 @@ export default function VerticalLinearStepper() {
                     disabled={index === 0}
                     onClick={handleBack}
                     sx={{ mt: 1, mr: 1 }}
-                    size="large"
+                    size='large'
                   >
                     Back
                   </Button>
@@ -146,7 +147,7 @@ export default function VerticalLinearStepper() {
         ))}
       </Stepper>
       {activeStep === steps.length && (
-        <div className="project">
+        <div className='project'>
           <p>
             Based on my experience and skillset, I am confident in my ability to
             excel as a senior software engineer. Through my experience, i have a
@@ -159,20 +160,20 @@ export default function VerticalLinearStepper() {
         </div>
       )}
     </Grid>
-  );
+  )
 }
 
 export function Experience() {
   return (
-    <Container id="experience">
+    <Container id='experience'>
       <h1>Experience</h1>
-      <ScrollAnimation animateOnce animateIn="fadeInUp">
-        <Grid container justifyContent="center">
+      <ScrollAnimation animateOnce animateIn='fadeInUp'>
+        <Grid container justifyContent='center'>
           <Grid xs={12} lg={8}>
             <VerticalLinearStepper />
           </Grid>
         </Grid>
       </ScrollAnimation>
     </Container>
-  );
+  )
 }
