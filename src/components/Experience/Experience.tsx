@@ -14,29 +14,19 @@ import FiberSmartRecordIcon from "@mui/icons-material/FiberSmartRecord"
 
 const steps = [
   {
-    id: 4,
-    title: "Senior Software Engineer",
-    subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
-    time: "Aug 2024 – Feb 2025",
-    is_present: false,
-    image: VNLogo,
-    bullets: [
-      "Conducted performance optimization by implementing progressive web app techniques, significantly reducing load times and enhancing user engagement.",
-      "Implemented best practices and guidelines through code reviews and unit testing (Jest).",
-      "Introduced reusable UI component library, reducing front-end bugs by 35%.",
-      "Maintained documentation for onboarding, code conventions, and CI/CD pipeline usage.",
-    ],
-  },
-  {
     id: 3,
     title: "Lead Software Engineer",
     subtitle: `Viral Nation Inc, 317 Adelaide St W (6th Floor) - Toronto`,
-    time: "Jan 2023 – Aug 2024",
+    time: "Jan 2023 – Feb 2025",
     is_present: false,
     image: VNLogo,
     bullets: [
       "Led development across multiple micro-frontend apps, using GraphQL and TypeScript.",
       "Spearheaded migration from legacy Angular codebase to React, reducing technical debt by 60%.",
+      "Conducted performance optimization by implementing progressive web app techniques, significantly reducing load times and enhancing user engagement.",
+      "Implemented best practices and guidelines through code reviews and unit testing (Jest).",
+      "Introduced reusable UI component library, reducing front-end bugs by 35%.",
+      "Maintained documentation for onboarding, code conventions, and CI/CD pipeline usage.",
       "Oversaw 30+ technical interviews, code reviews, and team mentorship to enhance code quality.",
       "Delivered features on time using agile sprint planning and constant communication with PMs.",
     ],
@@ -50,9 +40,10 @@ const steps = [
     image: VNLogo,
     bullets: [
       "Developed single page web applications using React, Redux, & REST APIs.",
-      "Implemented mobile-first design principles for responsive layouts.",
+      "Implemented mobile-first design principles for responsive design.",
       "Utilized Chrome DevTools for debugging and performance analysis.",
       "Collaborated closely with UI/UX designers and QA to improve design-to-code accuracy.",
+      "Fixed micro-frontend code duplication by implementing a shared component library enhancing app performance by 40%.",
     ],
   },
   {
